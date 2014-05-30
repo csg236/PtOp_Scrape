@@ -1,7 +1,7 @@
 import scraperwiki
 import lxml.html 
 
-html = scraperwiki.scrape("https://www.patientopinion.org.uk/feed/opinions?format=atom&tag=miscarriage")     
+html = scraperwiki.scrape("https://www.patientopinion.org.uk/feed/opinions?format=atom&tag=miscarriage&pagesize=25")     
 root = lxml.html.fromstring(html)
 for tr in root.cssselect("content"):
        
