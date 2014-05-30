@@ -6,7 +6,7 @@ root = lxml.html.fromstring(html)
 for tr in root.cssselect("content"):
        
     try:
-        website = tr.html
+        website = tr.text
         print website
         
     except:
