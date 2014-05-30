@@ -13,7 +13,6 @@ for tr in root.cssselect("content"):
         website = "parser issue :("
   
     data = {
-        'title' : 'title',
         'text': website
         }
     scraperwiki.sqlite.save(unique_keys=['text'], data=data)
