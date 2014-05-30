@@ -8,7 +8,7 @@ for tr in root.cssselect("title"):
        
     try:
         website = tr.text
-        print website & cont
+        print website
         
     except:
         website = "parser issue :("
