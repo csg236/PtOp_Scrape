@@ -3,11 +3,11 @@ import lxml.html
 
 html = scraperwiki.scrape("https://www.patientopinion.org.uk/feed/opinions?format=atom&tag=miscarriage")     
 root = lxml.html.fromstring(html)
+cont = root.cssselect("content")
 for tr in root.cssselect("title"):
        
     try:
         website = tr.text
-        cont = root.cssselect("content")
         print website & cont
         
     except:
