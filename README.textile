@@ -1,1 +1,1 @@
-Test scrape of Patient Opinion for the word jargon. 
+Very simple scraper, forked from ScraperWiki, that searches for the 25 most recent posts tagged with a certain word. 
