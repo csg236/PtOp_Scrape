@@ -12,7 +12,7 @@ for tr in root.cssselect("title"):
         website = "parser issue :("
   
     data = {
-        'title' : 'title',
+        'title' : 'html',
         'text': website
         }
     scraperwiki.sqlite.save(unique_keys=['text'], data=data)
