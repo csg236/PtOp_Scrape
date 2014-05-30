@@ -7,12 +7,14 @@ for tr in root.cssselect("title"):
        
     try:
         website = tr.text
-        print website
+        cont = root.cssselect("content")
+        print website & cont
+        
     except:
         website = "parser issue :("
   
     data = {
-        'title' : 'html',
+        'title' : cont,
         'text': website
         }
     scraperwiki.sqlite.save(unique_keys=['text'], data=data)
